@@ -1,90 +1,205 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <title>MY GITHUB REPOSITORIES LINK TREE</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dewangga Abdullah | Link Tree Repo</title>
     <style>
-            p {
-                text-indent: 40px;
-            }
+        /* Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0d1117; /* Warna gelap ala GitHub */
+            color: #c9d1d9;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            background: #161b22;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+            border: 1px solid #30363d;
+        }
+
+        /* Header / Hero */
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #30363d;
+        }
+
+        h1 {
+            color: #58a6ff;
+            font-size: 1.8rem;
+            margin-bottom: 12px;
+        }
+
+        .intro {
+            font-size: 0.95rem;
+            color: #8b949e;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 35px;
+        }
+
+        nav h2 {
+            font-size: 1.1rem;
+            color: #f0f6fc;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        /* Buttons / Links style */
+        .btn-nav {
+            display: block;
+            background-color: #21262d;
+            color: #c9d1d9;
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            border: 1px solid #30363d;
+            transition: all 0.2s ease;
+        }
+
+        .btn-nav:hover {
+            background-color: #30363d;
+            border-color: #8b949e;
+            transform: translateY(-2px);
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 35px;
+            scroll-margin-top: 20px; /* Biar pas loncat via nav ga terlalu mepet atas */
+        }
+
+        section h2 {
+            font-size: 1.3rem;
+            color: #f0f6fc;
+            margin-bottom: 15px;
+            border-left: 4px solid #238636; /* Aksen hijau bumbu backend */
+            padding-left: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #c9d1d9;
+            text-align: justify;
+            font-size: 0.95rem;
+        }
+
+        /* Repository Cards */
+        .repo-card {
+            background: #0d1117;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        .repo-card h3 {
+            color: #58a6ff;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+
+        .btn-repo {
+            display: inline-block;
+            background-color: #238636; /* Hijau GitHub */
+            color: #ffffff;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: background-color 0.2s;
+        }
+
+        .btn-repo:hover {
+            background-color: #2ea44f;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #30363d;
+            font-style: italic;
+            color: #8b949e;
+            font-size: 0.9rem;
+        }
     </style>
 </head>
-
 <body>
-    <h1>selamat datang di dalam link tree repo ku...!</h1>
-    <p>disini aku menulis dan mendaftarkan link repositories 
-yang pernah aku bikin dan publis disini, 
-sekalian belajar html dasar. dalam proses belajar 
-saat ini, aku hanya menulis hal dasar seperti biodata 
-dan sedikit hal tentang diriku sambil mencoba attribute baru</p1>
 
-    <br>
-    <hr>
+    <div class="container">
+        
+        <header>
+            <h1>Selamat Datang di Link Tree Repo Ku!</h1>
+            <p class="intro">Disini aku menulis dan mendaftarkan link repositories yang pernah aku bikin dan publis disini, sekalian belajar HTML dasar. Dalam proses belajar saat ini, aku hanya menulis hal dasar seperti biodata dan sedikit hal tentang diriku sambil mencoba attribute baru.</p>
+        </header>
 
-    <h2>NAV</h2>
-    <a href="#section-biodata">LONCAT KE POIN BIODATA</a>
-    <br>
-    <a href="#section-repositories">LONCAT KE POIN REPOSITORIES</a>
-    <br>
-    <a href="#section-roadmap">LONCAT KE SECTION ROADMAP</a>
+        <nav>
+            <h2>Navigasi</h2>
+            <a class="btn-nav" href="#section-biodata">LONCAT KE POIN BIODATA</a>
+            <a class="btn-nav" href="#section-repositories">LONCAT KE POIN REPOSITORIES</a>
+            <a class="btn-nav" href="#section-roadmap">LONCAT KE SECTION ROADMAP</a>
+        </nav>
 
-    <br>
-    <hr>
+        <section id="section-biodata">
+            <h2>Section Biodata</h2>
+            <p>Nama ku Dewangga Abdullah. Aku lahir tahun 2008. Saat website ini pertama kali dibuat, aku tinggal di Baturaja, Sumatera Selatan dan bersekolah di SMAN 1 OKU.</p>
+            <p>Saya memiliki minat pada teknologi berbasis internet, khususnya di bidang backend development yang berkaitan dengan pengolahan data dan sistem server. Selain itu, saya juga tertarik mempelajari cryptocurrency.</p>
+        </section>
 
-    <h2 id="section-biodata">SECTION BIODATA</h2>
-    <P>Nama ku Dewangga Abdullah. aku lahir tahun 2008.
-Saat website ini pertama kali dibuat, aku tinggal di
-Baturaja, Sumatera Selatan dan bersekolah di
-SMA Negeri OKU.
-    </P>
+        <section id="section-repositories">
+            <h2>Section Repositories</h2>
+            
+            <div class="repo-card">
+                <h3>Sistem Inventaris Manajemen Toko</h3>
+                <p>Saat aku pertama kali memulai belajar programming, aku memilih Python sebagai bahasa pemrograman pertama ku, lalu membuat proyek sederhana bernama sistem manajemen inventaris toko yang menggunakan RAM sementara dalam sistem penyimpanannya.</p>
+                <a class="btn-repo" href="https://github.com/dewanggaabdullah/sistem-managemen-inventaris-toko.git" target="_blank">Buka Repository</a>
+            </div>
 
-    <p>Saya memiliki minat pada teknologi berbasis internet,
-khususnya di bidang backend development yang
-berkaitan dengan pengolahan data dan sistem server.
-Selain itu, saya juga tertarik mempelajari cryptocurrency.
-    </p>
+            <div class="repo-card">
+                <h3>Teamcore_ToDoList</h3>
+                <p>Saat ini aku sedang belajar memahami serangkai materi tentang dan cara membuat API yang baik dan benar. Repo Teamcore_ToDoList ini masih dalam tahap perkembangan dan belum stabil saat ini, dan akan ditingkatkan seiring proses belajarku.</p>
+                <a class="btn-repo" href="https://github.com/dewanggaabdullah/Teamcore_ToDoList.git" target="_blank">Buka Repository</a>
+            </div>
+        </section>
 
-    <br>
-    <hr>
+        <section id="section-roadmap">
+            <h2>Section Roadmap</h2>
+            <p>Dalam proses belajar, aku memakai struktur yang banyak dipakai juga oleh developer lain dalam belajar ataupun hanya memantau sejauh mana perkembangan mereka dalam karier kerja yaitu roadmap.sh. Ucapan terima kasih saya kepada mereka yang membantu saya dalam mengetahui dimana perkembangan saya sekarang.</p>
+            <a class="btn-repo" href="https://roadmap.sh/backend" target="_blank">Lihat Roadmap Backend</a>
+        </section>
 
-    <h2 id="section-repositories">SECTION REPOSITORIES</h2>
-    <h3>sistem inventaris managemen toko</h3>
-    <p>saat aku pertama kali memulai belajar programing,
-        aku memilih python sebagai bahasa pemprograman
-         pertama ku, lalu membuat proyek sederhana bernama
-         sistem managemen inventaris toko yang menggunakan
-         ram sementara dalam sistem penyimpanannya</p>
-    <a href="https://github.com/dewanggaabdullah/sistem-managemen-inventaris-toko.git">
-        ini link reponya
-    </a>
-    <h3>Teamcore_ToDoList</h3>
-    <p>saat ini aku sedang belajar memahami serangkai materi
-        tentang dan cara membuat api yang baik dan benar,
-         repo Teamcore_ToDoList ini masih dalam tahap
-          perkembangan dan belum stabil saat ini, 
-          dan akan ditingkatkan seiring proses belajarku
-    </p>
-    <a href="https://github.com/dewanggaabdullah/Teamcore_ToDoList.git">
-        ini link reponya
-    </a>
+        <footer>
+            <p>-- Ku harap web ini dapat berguna bagi saya maupun orang lain, terima kasih --</p>
+        </footer>
 
-    <br>
-    <hr>
+    </div>
 
-    <h2 id="section-roadmap">SECTION ROADMAP</h2>
-    <p>dalam proses belajar, aku memakai struktur yang
-         banyak dipakai juga oleh developer lain dalam
-         belajar ataupun hanya memantau sejauh mana
-         perkembangan mereka dalam karier kerja yaitu roadmap.sh.
-         ucapan terima kasih saya kepada mereka yang
-         membantu saya dalam mengetahui dimana perkembangan saya
-         sekarang.
-        </p>
-        <a href="https://roadmap.sh/backend">ini link web nya</a>
-
-    <br>
-    <hr>
-
-    <p>--ku harap web ini dapat berguna bagi saya maupun
-         orang lain,terima kasih--</p>
 </body>
 </html>
